@@ -1,0 +1,20 @@
+
+.header-content {
+    background: rgb(148, 148, 240);
+    max-width: 960px;
+    padding: 20px 0;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.train-schedule {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.add-train {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 20px;
+}

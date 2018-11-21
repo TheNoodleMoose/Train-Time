@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Train Time</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/CSS/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
@@ -14,6 +15,71 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="row header-content">
+            <div class="col-lg-12 text-center">
+                <h1 class="header">Anytime Is Train Time</h1>
+                <h3>Schedule Your Train Today</h3>
+            </div>
+        </div>
+        <!-- ROW THAT HOLDS THE SCHEDULE -->
+        <div class="row train-schedule">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        Current Train Schedule
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency(min)</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody id="newTrainsHere">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ROW FOR TRAIN SCHEDULING -->
+        <div class="row add-train">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        Add Train
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Train Name</label>
+                                <input type="text" class="form-control" placeholder="Train Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Destination</label>
+                                <input type="text" class="form-control" placeholder="Destination">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">First Train(HH:mm - military time)</label>
+                                <input type="text" class="form-control" placeholder="First Train">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Frequency(min)</label>
+                                <input type="text" class="form-control"  placeholder="Frequency">
+                              </div>
+                              <button id="submitTrain" type="button" class="btn btn-primary">Add Train</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
