@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
-    <script src="assets/JS/main.js"></script>
+    <script defer src="assets/JS/main.js"></script>
 </head>
 
 <body>
@@ -59,21 +60,21 @@
                         <form>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Train Name</label>
-                                <input type="text" class="form-control" placeholder="Train Name">
+                                <input type="text" id="train-name-input" class="form-control" placeholder="Train Name">
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Destination</label>
-                                <input type="text" class="form-control" placeholder="Destination">
+                                <input type="text" id="destination-input" class="form-control" placeholder="Destination">
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">First Train(HH:mm - military time)</label>
-                                <input type="text" class="form-control" placeholder="First Train">
+                                <input  type="text" id="first-train-input" class="form-control" placeholder="First Train">
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Frequency(min)</label>
-                                <input type="text" class="form-control"  placeholder="Frequency">
-                              </div>
-                              <button id="submitTrain" type="button" class="btn btn-primary">Add Train</button>
+                                <input  type="text" id="frequency-input" class="form-control" placeholder="Frequency">
+                            </div>
+                            <button id="add-user" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -82,8 +83,10 @@
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
