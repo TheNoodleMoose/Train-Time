@@ -87,7 +87,6 @@ let updateSchedule = setInterval(function () {
                 var timeNow = moment();
 
                 firstTimeConverted = moment(childSnap.val().firstTrainTime, "HH:mm").subtract(1, "years");
-                console.log(firstTimeConverted)
 
                 var differenceTime = moment().diff(moment(firstTimeConverted), "minutes");
 
